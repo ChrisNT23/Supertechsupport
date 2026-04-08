@@ -12,7 +12,7 @@ const ContactForm = () => {
   const [status, setStatus] = useState('idle'); // 'idle' | 'submitting' | 'success' | 'error'
 
   const GOOGLE_FORM_ACTION = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdyb-2HeFb1dlv_mITp4GoSOlgr1vORq9G5ZsaNmFcjRjG7vQ/formResponse";
-  
+
   const ENTRY_IDS = {
     nombre: "entry.1737394060",
     email: "entry.1037399510",
@@ -49,7 +49,7 @@ const ContactForm = () => {
 
       setStatus('success');
       setFormData({ nombre: '', email: '', asunto: '', mensaje: '' });
-      
+
       // Regresar al estado inicial después de 5 segundos
       setTimeout(() => setStatus('idle'), 5000);
     } catch (error) {
@@ -64,11 +64,11 @@ const ContactForm = () => {
       <p className="instruction">Si tienes alguna duda o inconveniente, completa el formulario:</p>
 
       {status === 'success' && (
-        <div style={{ 
-          backgroundColor: '#d1fae5', 
-          color: '#065f46', 
-          padding: '1rem', 
-          borderRadius: '0.5rem', 
+        <div style={{
+          backgroundColor: '#d1fae5',
+          color: '#065f46',
+          padding: '1rem',
+          borderRadius: '0.5rem',
           marginBottom: '1rem',
           display: 'flex',
           alignItems: 'center',
@@ -80,11 +80,11 @@ const ContactForm = () => {
       )}
 
       {status === 'error' && (
-        <div style={{ 
-          backgroundColor: '#fee2e2', 
-          color: '#991b1b', 
-          padding: '1rem', 
-          borderRadius: '0.5rem', 
+        <div style={{
+          backgroundColor: '#fee2e2',
+          color: '#991b1b',
+          padding: '1rem',
+          borderRadius: '0.5rem',
           marginBottom: '1rem',
           display: 'flex',
           alignItems: 'center',
@@ -156,9 +156,9 @@ const ContactForm = () => {
           ></textarea>
         </div>
 
-        <button 
-          type="submit" 
-          className="btn-submit" 
+        <button
+          type="submit"
+          className="btn-submit"
           disabled={status === 'submitting'}
           style={{ opacity: status === 'submitting' ? 0.7 : 1 }}
         >
@@ -182,7 +182,7 @@ const ContactForm = () => {
         <h3 style={{ fontSize: '1rem', fontWeight: '600', marginBottom: '0.5rem' }}>Contacto Directo</h3>
         <div className="direct-contact">
           <Mail className="icon" size={20} />
-          <span style={{ fontSize: '0.95rem', fontWeight: '500' }}>supertch.ecuador@gmail.com</span>
+          <span style={{ fontSize: '0.95rem', fontWeight: '500' }}>supertech.ecuador@gmail.com</span>
         </div>
       </div>
     </div>
