@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="container">
       <div className="support-header" style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
-        <h1 style={{ fontSize: '2rem', fontWeight: '700', color: '#2c9bf0' }}>Atención al Cliente</h1>
+        <h1 style={{ fontSize: '2rem', fontWeight: '700', color: '#2c9bf0' }}>Atención al Cliente InfinityMobile</h1>
         <p style={{ color: '#6c757d', marginTop: '0.5rem' }}>Estamos aquí para ayudarte. Encuentra respuestas o contáctanos directamente.</p>
       </div>
 
@@ -23,12 +23,12 @@ function App() {
         {/* Right Column */}
         <section className="faq-section">
           <FAQAccordion />
-          
+
           <div className="legal-section">
             <div className="legal-card">
-              <a 
-                href="#" 
-                className="modal-link" 
+              <a
+                href="#"
+                className="modal-link"
                 onClick={(e) => { e.preventDefault(); setIsModalOpen(true); }}
               >
                 Ver Política de Privacidad

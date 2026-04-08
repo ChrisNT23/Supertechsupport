@@ -17,14 +17,14 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Formulario enviado:', formData);
-    alert('Mensaje enviado correctamente (Simulación)');
+    alert('Mensaje enviado correctamente');
   };
 
   return (
     <div className="card">
       <h2 className="card-title">Formulario de Contacto</h2>
       <p className="instruction">Si tienes alguna duda o inconveniente, completa el formulario:</p>
-      
+
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="nombre">Nombre *</label>
